@@ -5,6 +5,7 @@ body {
     
 }
 .header {
+   
     text-align: center;
 }
 h1 {
@@ -86,6 +87,7 @@ h2 {
 
 @media (min-width: 1025px) {
     .header{
+        padding-top: 3em;
         width: 650px;
         margin: auto;
     }
