@@ -62,8 +62,7 @@ h2 {
     border-top: solid 5px hsl(212, 86%, 64%);
 }
 .cards-wrap {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
 }
 .one {
     align-self: center;
@@ -71,24 +70,35 @@ h2 {
 .four {
     align-self: center;
 }
-@media only screen and (max-width: 375px) {
-    [class="cards-wrap"] {
 
-        display: block;
+@media only screen and (min-width:414px) and (max-width:767px){
+    .cards-wrap{
+        margin-left: 5%;
+        align-self: center;
     }
+}   
+@media only screen and (min-width:768px) and (max-width:1024px){
+        .cards-wrap{
+            margin-left: 25%;
+            align-self: center;
+        }
 }
 
-
-@media (min-width: 768px) {
-    [class="header"] {
+@media (min-width: 1025px) {
+    .header{
         width: 650px;
         margin: auto;
     }
-    [body] {
+    body {
         width: 1440px;
     }
-    [class="big-title"] {
+    .big-title{
         
         font-size: 2em;
+    }
+    .cards-wrap{
+        display: flex;
+        justify-content: center;
+        width:100%;
     }
 }
